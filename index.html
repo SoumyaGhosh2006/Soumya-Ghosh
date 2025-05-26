@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+    <!--HEADER-->
+    <header class="header" id="main-header">
+        <div class="header-left">
+            <div class="profile-avatar" id="profile-avatar">
+                <span><img src="/img/logo-small.png" alt="profile" id="profile-avatar-img"></span>
+            </div>
+        </div>
+        <h1 class="app-title">EmptyCup</h1>
+        <button class="menu-btn" id="menu-btn">⋮</button>
+    </header>
+
+    <!-- NAVBAR -->
+
+    <nav class="nav-tabs" id="navigation">
+        <a href="#" class="nav-tab" id="tab-contacts">
+            <div class="nav-icon">
+            <span><img src="/img/contacts.png" alt="contacts"></span>
+            </div>
+        </a>
+        <a href="#" class="nav-tab" id="tab-gallery">
+            <div class="nav-icon">
+                <span><img src="/img/gallery.png" alt="gallery"></span>
+                </div>
+        </a>
+        <a href="#" class="nav-tab" id="tab-map">
+            <div class="nav-icon">
+                <span><img src="/img/map.png" alt="map"></span>
+                </div>
+        </a>
+        <a href="./shortlisted.html" class="nav-tab active" id="tab-shortlisted">
+            <div class="nav-icon">
+                <span><img src="/img/shortlisted.png" alt="shortlisted"></span>
+            </div>
+        </a>
+        <a href="#" class="nav-tab" id="tab-sort">
+            <div class="nav-icon">
+                <span><img src="/img/sort.png" alt="sort"></span>
+                </div>
+        </a>
+    </nav>
+
+    <!-- MAINCONTENT -->
+
+    <main class="content" id="main-content">
+        <div class="studio-card" id="epic-designs-card">
+            
+            <div class="studio-content">
+                <div class="studio-header">
+                    <h2 class="studio-name">Epic Designs</h2>
+                </div>
+                
+                <div class="rating" id="epic-rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star empty">☆</span>
+                </div>
+
+                <p class="description">
+                    Passionate team of 4 designers working out of Bangalore with an experience of 4 years.
+                </p>
+
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-number">57 <br><p class="stat-label">Projects</p> </span>
+                        
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">8<br><p class="stat-label">Years</p></span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">$$ <br><p class="stat-label">Price</p></span>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <a href="tel:+919845328853" class="phone-number">+91 - 9845328853</a>
+                    <a href="tel:+919845328854" class="phone-number">+91 - 9845328854</a>
+                </div>
+            
+        </div>
+            
+        
+        <div class="action-buttons">
+            <button class="action-btn details-btn" id="details-btn" title="details"><img src="/./img/details.png"><span class="details-label">Details</span></button>
+            <button class="action-btn hide-btn" id="hide-btn" title="Hide"><img src="/./img/hide.png"><span class="hide-label">Hide</span></button>
+            <button class="action-btn shortlist-btn" title="shortlist" onclick="toggleShortlist(this)">
+                <img src="/./img/shortlist.png">
+                <span class="shortlist-label">Shortlist</span>
+            </button>            <button class="action-btn report-btn" id="report-btn" title="Report"><img src="/./img/report.png"><span class="report-label">Report</span></button>
+        </div>
+        </div>
+
+        <div class="studio-card" id="studio-d3-card">
+            <div class="studio-content">
+                <div class="studio-header">
+                    <h2 class="studio-name">Studio - D3</h2>
+                </div>
+                
+                <div class="rating" id="d3-rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+
+                <p class="description">
+                    Passionate team of 4 designers working out of Bangalore with an experience of 4 years.
+                </p>
+
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-number">43<br><p class="stat-label">Projects</p></span>
+                     </div>
+                    <div class="stat">
+                        <span class="stat-number">6<br><p class="stat-label">Years</p></span>
+                     </div>
+                    <div class="stat">
+                        <span class="stat-number">$$$   <br><p class="stat-label">Price</p></span>
+                     </div>
+                </div>
+
+                <div class="contact-info">
+                    <a href="tel:+919845328853" class="phone-number">+91 - 9845328853</a>
+                    <a href="tel:+919845328854" class="phone-number">+91 - 9845328854</a>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="action-btn details-btn" id="details-btn" title="details"><img src="/./img/details.png"><span class="details-label">Details</span></button>
+                <button class="action-btn hide-btn" id="hide-btn" title="Hide"><img src="/./img/hide.png"><span class="hide-label">Hide</span></button>
+                <button class="action-btn shortlist-btn" title="shortlist" onclick="toggleShortlist(this)" >
+                    <img src="/./img/shortlist.png">
+                    <span class="shortlist-label">Shortlist</span>
+                </button>
+                <button class="action-btn report-btn" id="report-btn" title="Report"><img src="/./img/report.png"><span class="report-label">Report</span></button>
+            </div>
+        </div>
+
+        <div class="studio-card" id="house-of-designs-card">
+            <div class="studio-content">
+                <div class="studio-header">
+                    <h2 class="studio-name">House of designs</h2>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button class="action-btn details-btn" id="details-btn" title="details"><img src="/./img/details.png"><span class="details-label">Details</span></button>
+        </div>
+    </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
